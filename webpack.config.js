@@ -1,6 +1,7 @@
+const path = require('path');
 module.exports = {
     mode: "development",
-    modules: {
+    module: {
         rules:[
             {
                 test: /\.js$/,
@@ -11,7 +12,14 @@ module.exports = {
             }
         ]
     },
+    // Reference: https://webpack.js.org/configuration/devtool/
+    devtool: "source-map",
+    // Reference: https://webpack.js.org/configuration/dev-server/#devserver
     devServer: {
-        contentBase: "./dist"
-    }
+        static: {
+          directory: path.join(__dirname, 'dist'),
+        },
+        compress: true,
+        port: 8080,
+    },
 };
