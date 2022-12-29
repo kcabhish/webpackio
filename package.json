@@ -1,0 +1,27 @@
+{
+  "name": "webpackio",
+  "version": "1.0.0",
+  "description": "Setting up webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcabhish/webpackio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcabhish/webpackio/issues"
+  },
+  "homepage": "https://github.com/kcabhish/webpackio#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
