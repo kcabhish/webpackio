@@ -1,0 +1,16 @@
+@use "_variables";
+body {
+    margin: 0;
+    background-color: variables.$bg-color; // calling sass variable
+    color: var(--text); // calling css variable
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-size: 1.5em;
+}

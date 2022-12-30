@@ -1,3 +1,4 @@
+import "./styles/index.scss";
 const user = {
     first_name: "John",
     last_name: "Doe",
