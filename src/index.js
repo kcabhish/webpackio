@@ -1,9 +1,7 @@
-import "./styles/index.scss";
-const user = {
-    first_name: "John",
-    last_name: "Doe",
-    address: "Charlettes Web",
-    phone: "999-999-9999"
-} 
+import {createRoot} from "react-dom/client";
+import Login from "./components/Login";
 
-console.log(user);
+const container = document.getElementById("root");
+const root = createRoot(container);
+
+root.render(<Login />);
